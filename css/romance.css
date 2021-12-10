@@ -123,3 +123,51 @@ small {
   padding: 1rem;
   margin-top: 1rem;
 }
+
+@media only screen and (min-width: 32rem) {
+
+  header {
+    margin: 0;
+    text-align: left;
+    height: 60px;
+    padding: 0;
+  }
+
+  header .header {
+    display: block;
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+
+  header nav ul li {
+    float: right;
+    margin: 0;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-left: .1rem;
+    margin-left: 18px;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 395px;
+    padding: 0;
+    margin: 0;
+  }
+
+}
