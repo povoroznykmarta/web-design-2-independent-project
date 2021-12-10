@@ -95,6 +95,11 @@ h2 {
   font-size: 1.5rem;
 }
 
+article {
+  justify-content: center;
+  padding-right: 1rem;
+}
+
 article p {
   padding-top: 0;
 }
@@ -159,6 +164,10 @@ small {
   header nav ul li {
     float: right;
     margin: 0;
+  }
+
+  div p {
+    justify-content: center;
   }
 
   section {
