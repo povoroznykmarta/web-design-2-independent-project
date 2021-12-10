@@ -162,7 +162,7 @@ article a {
   display: block;
   margin-left: 60px;
   margin-right: 60px;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-align: center;
 }
 
@@ -246,7 +246,6 @@ small {
     margin: 0;
     padding-bottom: 10px;
   }
-
 
   header nav ul li {
     float: right;
