@@ -4,7 +4,8 @@ html {
 
 *,
 *::before,
-*::after{
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -21,7 +22,7 @@ header {
 
 header .header {
   font-family: "Quiche Display";
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: lighter;
   color: #fff;
   display: block;
@@ -38,6 +39,7 @@ header .header {
 header nav ul {
   display: block;
   margin: 0 auto;
+  padding-left: 60px;
 }
 
 header nav ul li {
@@ -48,7 +50,7 @@ header nav ul li {
 }
 
 nav ul li a {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
 }
 
@@ -65,13 +67,16 @@ nav ul li a {
 }
 
 .center-text {
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
-  padding-left: 50px;
+  padding-left: 10px;
+  margin-left: 55px;
+  margin-top: 170px;
+  border-left: .28rem solid #fff;
 }
 
 .banner h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-family: "Adobe Caslon";
   color: #fff;
   text-align: left;
@@ -80,7 +85,7 @@ nav ul li a {
 }
 
 .banner h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Adobe Caslon";
   color: #fff;
   font-weight: lighter;
@@ -92,7 +97,7 @@ nav ul li a {
 
 p {
   text-align: center;
-  font-size: 15px;
+  font-size: .9375rem;
   font-family: "Adobe Caslon";
   color: #82624f;
   margin: 0;
@@ -102,7 +107,7 @@ p {
 
 h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-family: "Quiche Display";
   font-weight: lighter;
   color: #2c160d;
@@ -117,6 +122,8 @@ h3 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 3rem;
+  padding-left: .1rem;
+  margin-left: 18px;
 }
 
 article {
@@ -130,16 +137,17 @@ article {
 }
 
 h4 {
-  display: block;
+  display: inline-block;
   text-align: center;
   font-family: "Adobe Caslon";
   color: #2c160d;
-  font-size: 32px;
-  margin: 0;
-  padding-bottom: 22px;
+  font-size: 2.5rem;
   font-weight: lighter;
-  padding-top: 10px;
-  border-bottom: .1rem solid #2c160d;
+  border-bottom: .15rem solid #2c160d;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 article a {
@@ -166,8 +174,9 @@ img {
 }
 
 article ul {
-  display: block;
+  display: inline-block;
   text-align: center;
+  padding-left: 0;
 }
 
 article ul li {
@@ -175,7 +184,7 @@ article ul li {
   float: none;
   list-style: none;
   color: #2c160d;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin: 0;
   padding: 5px;
 }
@@ -191,6 +200,8 @@ footer {
 
 footer ul {
   display: block;
+  padding: .5rem;
+  margin-left: 30px;
 }
 
 footer ul li {
@@ -201,15 +212,97 @@ footer ul li {
 }
 
 footer ul li a {
-  font-size: 15px;
+  font-size: .9375rem;
   color: #fff;
 }
 
 small {
   display: block;
   text-align: center;
-  font-size: 10px;
+  font-size: .625rem;
   color: #fff;
   padding: 1rem;
   margin-top: 1rem;
 }
+
+@media only screen and (min-width: 32rem) {
+
+  header {
+    margin: 0;
+    text-align: left;
+    height: 60px;
+    padding: 0;
+  }
+
+  header .header {
+    display: block;
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+
+  header nav ul li {
+    float: right;
+    margin: 0;
+  }
+
+  .center-text {
+    text-align: right;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 3.8rem;
+  }
+
+  .movies {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-left: 3.8rem;
+  }
+
+  footer {
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+    margin-top: 40px;
+    background-color: #2c160d;
+  }
+
+  footer ul {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+  }
+
+  footer ul li {
+    display: inline-block;
+    float: none;
+    list-style: none;
+    padding-right: 8px;
+    text-align: center;
+  }
+
+  footer ul li a {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  small {
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (min-width: 73rem) {
