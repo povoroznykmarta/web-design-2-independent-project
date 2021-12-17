@@ -167,7 +167,7 @@ small {
   }
 
   div p {
-    justify-content: center;
+    padding-top: 2rem;
   }
 
   section {
@@ -186,6 +186,7 @@ small {
     width: 395px;
     padding: 0;
     margin: 0;
+    text-align: justify;
   }
 
   footer {
