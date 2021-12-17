@@ -72,6 +72,17 @@ nav ul li a {
   color: #fff;
 }
 
+a:hover {
+  text-decoration: inherit;
+  color: #9d8375;
+}
+
+.navigation:hover {
+  border: .2rem solid #fff;
+  background-color: #9d8375;
+  color: #fff;
+}
+
 /* Index */
 
 .banner {

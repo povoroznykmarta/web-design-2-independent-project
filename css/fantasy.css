@@ -138,6 +138,17 @@ small {
   margin-top: 1rem;
 }
 
+a:hover {
+  text-decoration: inherit;
+  color: #9d8375;
+}
+
+.navigation:hover {
+  border: .2rem solid #fff;
+  background-color: #9d8375;
+  color: #fff;
+}
+
 @media only screen and (min-width: 32rem) {
 
   header {
@@ -147,23 +158,36 @@ small {
     padding: 0;
   }
 
+
   header .header {
-    display: block;
+    display: inline-block;
     margin: 0;
     text-align: left;
     padding-left: 10px;
     padding-bottom: 5px;
   }
 
-  header nav ul {
-    margin: 0;
-    padding-bottom: 10px;
+  header nav {
+    display: inline-block;
+    text-align: right;
   }
 
+  header nav ul {
+    grid-gap: 2rem;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align: right;
+  }
 
   header nav ul li {
     float: right;
     margin: 0;
+    text-align: right;
+  }
+
+  nav ul li a {
+    text-align: right;
   }
 
   section {
