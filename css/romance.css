@@ -73,6 +73,11 @@ h1 {
   padding-bottom: 20px;
 }
 
+article {
+  justify-content: center;
+  padding-right: 1rem;
+}
+
 section {
   display: grid;
   grid-template-columns: 1fr;
@@ -93,17 +98,22 @@ h2 {
   color: #2c160d;
   padding-bottom: 0;
   font-size: 1.5rem;
-  align-items: start;
-  margin: 1rem 0 1.5rem;
-}
-
-article {
-  justify-content: center;
-  padding-right: 1rem;
+  display: block;
+  margin-block-start: 15px;
+  margin-block-end: 15px;
 }
 
 article p {
-  margin: 0 0 1.5rem;
+  padding-top: 0;
+  display: block;
+  margin-block-start: -12px;
+  margin-block-end: 15px;
+}
+
+.mrfox {
+  display: block;
+  margin-block-start: -10px;
+  margin-block-end: 15px;
 }
 
 footer {
@@ -192,8 +202,11 @@ a:hover {
     text-align: right;
   }
 
-  div p {
-    padding-top: 2rem;
+  img {
+    display: block;
+    width: 98%;
+    border: .7rem solid #2c160d;
+    align: center;
   }
 
   section {
@@ -212,7 +225,6 @@ a:hover {
     width: 395px;
     padding: 0;
     margin: 0;
-    text-align: justify;
   }
 
   footer {
