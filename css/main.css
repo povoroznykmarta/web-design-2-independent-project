@@ -56,13 +56,14 @@ header .header {
 
 header nav ul {
   display: block;
+  text-align: center;
   margin: 0 auto;
-  padding-left: 60px;
+  padding-left: 10px;
 }
 
 header nav ul li {
   display: inline-block;
-  float: left;
+  float: none;
   list-style: none;
   padding: 0 10px;
 }
@@ -231,11 +232,12 @@ footer ul {
   display: block;
   padding: .5rem;
   margin-left: 30px;
+  text-align: center;
 }
 
 footer ul li {
   display: inline-block;
-  float: left;
+  float: none;
   list-style: none;
   padding-right: 8px;
 }
@@ -254,7 +256,7 @@ small {
   margin-top: 1rem;
 }
 
-@media only screen and (min-width: 32rem) {
+@media only screen and (min-width: 40rem) {
 
   header {
     margin: 0;
@@ -296,6 +298,8 @@ small {
 
   .center-text {
     text-align: right;
+    margin-left: 370px;
+    margin-top: 170px;
   }
 
   p {
@@ -346,7 +350,7 @@ small {
 
 }
 
-@media only screen and (min-width: 73rem) {
+@media only screen and (min-width: 80rem) {
 
   .movies {
     display: flex;
@@ -357,6 +361,35 @@ small {
     gap: 3rem;
     padding-left: .1rem;
     margin-left: 18px;
+  }
+
+  .center-text {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+    margin-left: 850px;
+    margin-top: 200px;
+    border-left: .28rem solid #fff;
+  }
+
+  .banner h1 {
+    font-size: 3.75rem;
+    font-family: "Adobe Caslon";
+    color: #fff;
+    text-align: left;
+    text-shadow: 2px 2px 8px #111;
+    margin: 0;
+  }
+
+  .banner h2 {
+    font-size: 1.,75rem;
+    font-family: "Adobe Caslon";
+    color: #fff;
+    font-weight: lighter;
+    text-align: left;
+    text-shadow: 2px 2px 8px #111;
+    margin: 0;
+    padding-top: 10px;
   }
 
 }

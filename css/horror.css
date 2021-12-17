@@ -38,12 +38,14 @@ header .header {
 
 header nav ul {
   display: block;
+  text-align: center;
   margin: 0 auto;
+  padding-left: 10px;
 }
 
 header nav ul li {
   display: inline-block;
-  float: left;
+  float: none;
   list-style: none;
   padding: 0 10px;
 }
@@ -127,11 +129,12 @@ footer ul {
   display: block;
   padding: .5rem;
   margin-left: 30px;
+  text-align: center;
 }
 
 footer ul li {
   display: inline-block;
-  float: left;
+  float: none;
   list-style: none;
   padding-right: 8px;
 }
@@ -161,7 +164,7 @@ a:hover {
   color: #fff;
 }
 
-@media only screen and (min-width: 32rem) {
+@media only screen and (min-width: 40rem) {
 
   header {
     margin: 0;
@@ -255,6 +258,19 @@ a:hover {
 
   small {
     font-size: .7rem;
+  }
+
+}
+
+@media only screen and (min-width: 80rem) {
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 470px;
+    padding: 0;
+    margin: 0;
   }
 
 }
